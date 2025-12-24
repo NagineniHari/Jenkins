@@ -10,7 +10,7 @@ pipeline {
         TRAINER="SIVA"
     }
         options {
-        timeout(time: 10, unit: 'SECONDS') 
+       // timeout(time: 10, unit: 'SECONDS') 
         disableConcurrentBuilds()
     }
         parameters {
