@@ -41,6 +41,7 @@ pipeline {
 
                 sh  """
                  echo "Testiing"
+                 env
 
                     """
                 }
