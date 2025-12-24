@@ -4,6 +4,10 @@ pipeline {
         label "AGENT-1"
     }
     }
+    environment {
+        COURSE="Jenkins"
+        TRAINER="SIVA"
+    }
     stages {
         stage('Build') {
             steps {
@@ -12,6 +16,7 @@ pipeline {
 
                 sh  """
                  echo "Building"
+                 echo "$COURSE"
 
                     """
                 }
@@ -23,8 +28,8 @@ pipeline {
                 script { 
 
                 sh  """
-                 echo "Building"
-
+                 echo "Staging"
+                 echo "$TRAINER"
                     """
                 }
             }
@@ -35,7 +40,7 @@ pipeline {
                 script { 
 
                 sh  """
-                 echo "Building"
+                 echo "Testiing"
 
                     """
                 }
