@@ -67,6 +67,7 @@ pipeline {
                 }
             }
         }
+        // approvals added 
         stage('Deploy') {
             input {
                 message "Should we continue?"
