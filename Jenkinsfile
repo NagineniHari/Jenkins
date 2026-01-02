@@ -8,9 +8,10 @@ pipeline {
     environment {
         COURSE="Jenkins"
         TRAINER="SIVA"
+        DURATION="120HRS"
     }
         options {
-       // timeout(time: 10, unit: 'SECONDS') 
+       // timeout(time: 10, unit: 'MINUTES') 
         disableConcurrentBuilds()
     }
         parameters {
