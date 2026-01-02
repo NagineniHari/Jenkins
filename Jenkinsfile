@@ -8,7 +8,7 @@ pipeline {
     environment {
         COURSE="Jenkins"
         TRAINER="SIVA"
-        DURATION="120HRS"
+        DURATION="150HRS"
     }
         options {
        // timeout(time: 10, unit: 'MINUTES') 
