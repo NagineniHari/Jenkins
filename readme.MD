@@ -28,6 +28,10 @@ sudo yum install fontconfig java-21-openjdk -y
 
 ## Managed Plugins
 Stage view
+Pipeline Utility Steps
+AWS Credentials
+AWS Steps
+
 
 ## Master Agent Architecture
 Create credentials to connect agent
