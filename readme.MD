@@ -32,6 +32,7 @@ Pipeline Utility Steps
 AWS Credentials
 AWS Steps
 SonarQube Scanner
+AnsiColor
 
 ## Credentials
 ssh-creds
@@ -43,3 +44,16 @@ github-token
 Create credentials to connect agent
 Install Java in agent
 Select Non verification strategy
+
+## Trivy Installing
+curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sudo sh -s -- -b /usr/local/bin v0.68.2
+
+## image scaning command
+
+trivy image \
+  --severity HIGH,CRITICAL,MEDIUM \
+  --exit-code 1 \
+  --no-progress \
+  --format table \
+  --pkg-types os \
+  996058207546.dkr.ecr.us-east-1.amazonaws.com/safety/catalogue:1.1.0
