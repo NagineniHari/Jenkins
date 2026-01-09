@@ -31,7 +31,13 @@ Stage view
 Pipeline Utility Steps
 AWS Credentials
 AWS Steps
+SonarQube Scanner
 
+## Credentials
+ssh-creds
+aws-creds
+sonar-token
+github-token
 
 ## Master Agent Architecture
 Create credentials to connect agent
